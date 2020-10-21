@@ -7,12 +7,10 @@
 		outline: 0;
 		border: none;
 		color: #FFFFFF ;
-		font-family: 'source-code-variable';
-		font-sty: 'extralight';
-		background-color: #F8C4B7 ;
+		background-color: #000000 ;
 		border-radius: 0px;
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		float: ;
 		font-size: 30px;
 		padding: 0px;
@@ -20,30 +18,26 @@
 	}
 	
 	.operator {
-		outline: none;
+		outline: 0;
 		border: none;
 		color: #FFFFFF;
-		font-family: 'source-code-variable';
-		font-sty: 'extralight';
-		background-color: #C2D7DE;
+		background-color: #3D3D3D;
 		border-radius: 0px;
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		float: ;
 		font-size: 30px;
 		padding: 0px;
-		margin-right: -5px;
+		margin: -5px;
 	}
 	
 	.inputRow {
-		position: center;
+		position: relative;
 		display: inline-block;
 		width: 100%;
 		padding: 0px;
-		float-right: 300px;
 	}
 	
-
 	.number:hover {
 		background-color: #D35007;
 	}
@@ -52,26 +46,27 @@
 		background-color: #D2F6FF;
 		color: #000000
 	}
-	.equals2 {
-		background-color: #F8C4B7;
-		width: 300px;
-		height: 100px;
-	}
+	
+
 	#display {
-		width: 900px;
-		height: 200px;
+		margin-left: -5px;
+		width: 219px;
+		height: 77px;
 		border: none;
 		font-size: 30px;
 		color: #00000;
-		background-color: #9D9B75;
-		margin-left: 0px;
+		background-color: #CBCBCB
 	}	
 	
+	#AC {
+		padding-bottom: -5px;
+		
+	}
 </style>
 <title>Untitled Document</title>
 </head>
 
-<body> 
+<body>
 <form name="calculator">
 
 <div id="myCalculator">
@@ -81,7 +76,7 @@
 	<input type="text" name="display" id="display" disabled>
 	<input type="button" class="operator" name="clear" value="AC" onClick="calculator.display.value=''">
 	</div>
-	
+
 <div class="inputRow">
 	<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">
 	<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">
@@ -100,7 +95,8 @@
 	<input type="button" class="number" value="1" onclick="calculator.display.value +='1'">
 	<input type="button" class="number" value="2" onclick="calculator.display.value +='2'">
 	<input type="button" class="number" value="3" onclick="calculator.display.value +='3'">
-	<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value += '*'">
+	<input type="button" class="operator" name="multiply" value="*"
+	onclick="calculator.display.value += '*'">
 		</div>
 
 <div class="inputRow">
@@ -109,12 +105,9 @@
 	<input type="button" class="operator" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
 	<input type="button" class="operator" name="divide" value="/" onClick="calculator.display.value +='/'">
 	</div>
-	
-<div class="imputRow">
-	<input type="button" class="operator" name="equals2" value="" onclick="calculator.display.value = eval(calculator.display.value)">
-	<input type="button" class="operator" name="delete" value="DEL" onclick="calculator.display.value = calculator.display.value.substr(0,calculator.display.vaue)">
-		</div>
 
+	
+	
 
 </form>
 </body>
