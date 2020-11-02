@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Self Portrait</title>
+	
+<style>
+
+body{
+		background-color: #E0E0E2 ;
+		}
+
+
+	
+	.head {
+		width: 250px;
+		height: 300px;
+		background: #E0BEA4;
+		float-right: 50%;
+		postition: absolute;
+		margin: 100px 0px 0px 350px;
+		-webkit-border-radius: 88px;
+		-webkit-border-bottom-right-radius: 51px;
+		-webkit-border-bottom-left-radius: 51px;
+		-moz-border-radius: 88px;
+		-moz-border-radius-bottomright: 51px;
+		-moz-border-radius-bottomleft: 51px;
+		border-radius: 88px;
+		border-bottom-right-radius: 51px;
+		border-bottom-left-radius: 51px;
+    }
+	
+	.neck{
+		width: 120px;
+      	height: 200px;
+		position: absolute;
+		margin: 300px 0px 0px 61px;
+      	background: #E0BEA4;
+	}
+
+	
+	
+	.triangle {
+		width: 0;
+		height: 0;
+		float-right: 50%;
+		position: absolute;
+		border-style: solid;
+		border-width: 80px 110px 0 105px;
+		border-color: #14384B transparent transparent transparent;
+		border-radius: 50px;
+  		border-top-right-radius:0px;
+    	border-top-left-radius:8px; 
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		margin: -11px 0px 0px 367.49px;
+		border-radius: 0 0 45px 45px;
+			;
+	}
+	
+	.rectangle {
+		width: 250px;
+		height: 112px;
+		position: absolute;
+		background: #14384B;
+		margin: -111px 0px 0px  350px;
+		-webkit-border-bottom-right-radius: 51px;
+		-webkit-border-bottom-left-radius: 51px;
+		-moz-border-radius-bottomright: 51px;
+		-moz-border-radius-bottomleft: 51px;
+		border-bottom-right-radius: 51px;
+		border-bottom-left-radius: 51px;
+		
+	}
+		
+	.left-shaddow {
+		width: 80px;
+		height: 65px;
+		position: absolute;
+		background-color: #CCAE9A;
+		border-radius: 40% 50% 2% 50% / 60% 60% 40% 40%;
+		margin: -207px 0px 0px 364px;
+		transform: rotate(5deg);
+    }
+    .left {
+		width: 80px;
+		height: 60px;
+		position: absolute;
+		background-color: white;
+		border-radius: 40% 50% 2% 50% / 60% 60% 40% 40%;
+		margin: -200px 0px 0px 365px;
+		transform: rotate(5deg);
+    }
+
+	.left-iris{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: #4A5651;
+		border-radius: 50%;
+		margin: -200px 0px 0px 380px;		
+	}		
+	
+	.left-pupil {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		background-color: black;
+		border-radius: 50%;
+		margin: -195px 0px 0px 385px;				
+	}	
+	
+	.left-shine {
+      	width: 5px;
+      	height: 5px;
+		position: absolute;
+      	background: white;
+		margin: -185px 0px 0px 535px;
+      	border-radius: 50%;
+		z-index: 3;	
+		animation: shine;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+    }
+ 
+	
+	.left-eyebrow{
+		width: 90px;
+		position: absolute;
+		margin: -230px 0px 0px 357px;
+		animation: leftraise;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;	
+	}
+	
+	.right-shaddow {
+		  width: 80px;
+		  height: 65px;
+		  position: absolute;
+		  background-color: #CCAE9A;
+		  border-radius: 40% 50% 2% 50% / 60% 60% 40% 40%;
+		  margin: -207px 0px 0px 506px;
+		  transform: rotate(5deg);
+		  -webkit-transform: scaleX(-1);
+		  vtransform: scaleX(-1);
+    }
+	  .right {
+		  width: 80px;
+		  height: 60px;
+		  position: absolute;
+		  background-color: white;
+		  border-radius: 40% 50% 2% 50% / 60% 60% 40% 40%;
+		  margin: -200px 0px 0px 505px;
+		  transform: rotate(5deg);
+		  -webkit-transform: scaleX(-1);
+		  vtransform: scaleX(-1);
+    }
+	
+	
+	.right-iris{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: #4A5651;
+		border-radius: 50%;
+		margin: -200px 0px 0px 520px;		
+	}		
+	
+	.right-pupil {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		background-color: black;
+		border-radius: 50%;
+		margin: -195px 0px 0px 525px;				
+	}
+	.right-shine {
+      	width: 5px;
+      	height: 5px;
+		position: absolute;
+      	background: white;
+		margin: -185px 0px 0px 395px;
+      	border-radius: 50%;
+		z-index: 3;
+		animation: shine;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+    }
+ 
+
+	.right-eyebrow {
+		width: 95px;
+		position: absolute;
+		margin: -230px 0px 0px 495px;
+		animation: rightraise;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+	
+	
+	img {
+		width:95px;
+		position: absolute;
+	}
+
+  
+	.body{
+		width: 285px;
+      	height: 210px;
+		position: absolute;
+		margin: 135px 0px 0px 330px;
+      	background: white;
+	}
+	
+	.rshoulder{
+		width: 150px;
+      	height: 100px;
+		position: absolute;
+		background: white;
+		margin: 90px 0px 0px 330px;
+     	border-radius: 50%;
+		animation: shrug;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+	
+	.lshoulder{
+		width: 150px;
+      	height: 100px;
+		position: absolute;
+		background: white;
+		margin: 90px 0px 0px 465px;
+     	border-radius: 50%;
+		animation: shrug;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+	
+	.lhood{
+		width: 90px;
+     	height: 25px;
+		position: absolute;
+		transform: rotate(15deg);
+     	background: white;
+		margin: 85px 0px 0px 370px;
+     	border-radius: 50%; 
+		animation: shrug;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+    }
+	
+	.rhood{
+		width: 90px;
+     	height: 25px;
+		position: absolute;
+		transform: rotate(-15deg);
+     	background: white;
+		margin: 86px 0px 0px 485px;
+     	border-radius: 50%;
+		animation: shrug;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+    }
+	
+	.right-one{
+		width: 30px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -250px 0px 0px 340px;
+     	border-radius: 30px / 120px;
+		z-index: 1;
+    }
+		
+	.right-two{
+		width: 40px;
+      	height: 130px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -170px 0px 0px 330px;
+     	border-radius: 40px / 130px;
+		z-index: 1;
+    }
+	
+	.right-three{
+		width: 50px;
+      	height: 130px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -90px 0px 0px 335px;
+     	border-radius: 50px / 130px;
+		z-index: 1;
+    }
+	
+	.right-three{
+		width: 30px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -70px 0px 0px 335px;
+     	border-radius: 30px / 120px;
+		z-index: 1;
+    }
+	
+	.right-three{
+		width: 30px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -70px 0px 0px 335px;
+     	border-radius: 30px / 120px;
+		z-index: 1;
+    }
+	
+	.right-four{
+		width: 35px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -5px 0px 0px 325px;
+     	border-radius: 35px / 120px;
+		z-index: 1;
+    }
+	
+	.right-five{
+		width: 25px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: 70px 0px 0px 340px;
+     	border-radius: 25px / 120px;
+		z-index: 1;
+    }
+	
+	.left-one{
+		width: 30px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -250px 0px 0px 575px;
+     	border-radius: 30px / 120px;
+		z-index: 1;
+    }
+		
+	.left-two{
+		width: 40px;
+      	height: 130px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -170px 0px 0px 570px;
+     	border-radius: 40px / 130px;
+		z-index: 1;
+    }
+	
+	
+	.left-three{
+		width: 30px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -70px 0px 0px 585px;
+     	border-radius: 30px / 120px;
+		z-index: 1;
+    }
+	
+	.left-four{
+		width: 25px;
+      	height: 120px;
+		position: absolute;
+      	background: #2D2625;
+		margin: -5px 0px 0px 590px;
+     	border-radius: 25px / 120px;
+		z-index: 1;
+    }
+	.left-five{
+		width: 25px;
+      	height: 130px;
+		position: absolute;
+      	background: #2D2625;
+		margin: 50px 0px 0px 580px;
+     	border-radius: 25px / 120px;
+		z-index: 1;
+    }
+	
+	.under{
+		width: 250px;
+      	height: 240px;
+      	background: #231E1E;
+		position: absolute;
+		z-index:-1;
+		margin: -100px 0px 0px 350px;
+	}
+	
+	.top{
+		height: 30px;
+		width: 200px;
+		position: absolute;
+		margin: -370px 0px 0px 345px;
+		border-bottom: 100px solid #5C5F4B;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+	}
+	
+	.fold {
+		height:20px;
+		width: 240px;
+		position: absolute;
+		margin: -305px 0px 0px 345px;
+		border-top: 0px;
+		border-bottom: 50px solid #6E705B;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		z-index: 1
+	}
+	.oval {
+		width: 204px;
+      	height: 100px;
+     	background: #5C5F4B;
+		position: absolute;
+		margin: -380px 0px 0px 373px;
+      	border-radius: 50%
+    }
+	
+	.patch{
+		width: 80px;
+		height: 35px;
+		position: absolute;
+		background: white;
+		border: 2px solid black;
+		margin: -279px 0px 0px 431px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-mox-border-radius: 5px;
+		z-index: 2;
+		
+	}
+	
+	@-webkit-keyframes rightraise {
+		0% {transform: rotate(0deg)}
+		50%{transform: rotate(10deg)}
+		100%{transform: rotate(0deg) }
+	}
+	@-webkit-keyframes leftraise {
+		0% {transform: rotate(0deg)}
+		50%{transform: rotate(-10deg)}
+		100%{transform: rotate(0deg) }
+	}
+	@-webkit-keyframes shrug {
+		0%{top:400px} 
+		50% {top: 390px} 
+		100%{top:400px}
+	}
+	@-webkit-keyframes shine {
+		0%{width: 5px;} 
+		50% {width: 10px;} 
+		100%{width: 5px;}
+	}
+	
+	
+	</style>
+</head>
+
+<body>
+	
+
+<div class="head">
+  <div class="neck"></div>
+</div>
+<div class="mask">
+  <div class="triangle"></div>
+  <div class="rectangle"></div>
+	</div>
+<div class="eyes">
+  <div class="left-shaddow"></div>
+  <div class="left"></div>
+  <div class="left-iris"></div>
+  <div class="left-pupil"></div>
+	<div class="left-shine"></div>
+	<div class="right-shaddow"></div>
+  <div class="right"></div>
+  <div class="right-iris"></div>
+  <div class="right-pupil"></div>
+	<div class="right-shine"></div>
+<div class="left-eyebrow">
+	<img src="left-eyebrow.png">
+	</div>
+
+<div class="right-eyebrow">
+	<img src="right-eyebrow.png">
+	</div>
+<div class="hair">
+	<div class="left-one"></div>
+	<div class="left-two"></div>
+	<div class="left-three"></div>
+	<div class="left-four"></div>
+	<div class="left-five"></div>
+	<div class="right-one"></div>
+	<div class="right-two"></div>
+	<div class="right-three"></div>
+	<div class="right-four"></div>
+	<div class="right-five"></div>
+	<div class="under"></div>
+	</div>
+<div class="hat">
+	<div class="oval"></div>
+	<div class="top"></div>
+	<div class="fold"></div>
+	<div class="patch"></div>
+	</div>
+	
+<div class="hoodie">
+	<div class="body"></div>
+	<div class="rshoulder"></div>
+	<div class="lshoulder"></div>
+	<div class="rhood"></div>
+	<div class="lhood"></div>
+	</div>
+</div>
+</body>
+</html>
